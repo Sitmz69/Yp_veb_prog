@@ -11,9 +11,9 @@
     --text-primary: #f5f5f5;
     --text-secondary: #b0b0b0;
     --text-muted: #808080;
-    --accent-primary: #c9a227;
-    --accent-secondary: #d4af37;
-    --accent-dark: #8b6914;
+    --accent-primary: #8b0000; /* Темно-красный - цвет банданы и крови */
+    --accent-secondary: #c41e3a; /* Яркий красный для ховера */
+    --accent-gold: #d4af37; /* Золотой для редких элементов */
     --border-color: #2a2a2a;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -453,6 +453,9 @@ a {
     overflow: hidden;
     cursor: pointer;
     transition: var(--transition);
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .gallery-item:hover {
@@ -536,10 +539,14 @@ a {
     border-radius: 10px;
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .weapon-card:hover {
     border-color: var(--accent-primary);
+    transform: translateY(-5px);
 }
 
 .weapon-icon {
