@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажи - RDR2 Encyclopedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>RDR2<span>Wiki</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="characters.html" class="nav-link active">Персонажи</a></li>
+                        <li><a href="guides.html" class="nav-link">Гайды</a></li>
+                        <li><a href="facts.html" class="nav-link">Факты</a></li>
+                        <li><a href="gallery.html" class="nav-link">Галерея</a></li>
+                        <li><a href="weapons.html" class="nav-link">Оружие</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+            <li><a href="characters.html" class="mobile-nav-link">Персонажи</a></li>
+            <li><a href="guides.html" class="mobile-nav-link">Гайды</a></li>
+            <li><a href="facts.html" class="mobile-nav-link">Факты</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">Галерея</a></li>
+            <li><a href="weapons.html" class="mobile-nav-link">Оружие</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Персонажи</h1>
+                <p>Знакомьтесь с членами банды Ван дер Линде и другими жителями Дикого Запада</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="section characters-page">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="gang">Банда Ван дер Линде</button>
+                <button class="filter-btn" data-filter="allies">Союзники</button>
+                <button class="filter-btn" data-filter="enemies">Враги</button>
+                <button class="filter-btn" data-filter="other">Другие</button>
+            </div>
+
+            <!-- Characters Grid -->
+            <div class="characters-grid">
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #8b0000 0%, #c41e3a 100%);">
+                        <div class="character-placeholder">AM</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Артур Морган</h3>
+                        <p class="character-role">Главный герой, член банды Ван дер Линде</p>
+                        <p class="character-desc">Верный помощник Датча, опытный ковбой с непростой судьбой. Один из самых преданных членов банды.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #4a0080 0%, #8b008b 100%);">
+                        <div class="character-placeholder">DV</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Датч Ван дер Линде</h3>
+                        <p class="character-role">Лидер банды</p>
+                        <p class="character-desc">Харизматичный лидер с грандиозными планами. Верит в свободу от цивилизации любой ценой.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #006400 0%, #228b22 100%);">
+                        <div class="character-placeholder">HS</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Хозеа Мэтьюз</h3>
+                        <p class="character-role">Правая рука Датча</p>
+                        <p class="character-desc">Старейший член банды, голос разума. Опытный мошенник и стратег.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #8b4513 0%, #cd853f 100%);">
+                        <div class="character-placeholder">SG</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Сьюзан Гримшо</h3>
+                        <p class="character-role">Домоправительница лагеря</p>
+                        <p class="character-desc">Строгая женщина, которая держит лагерь в порядке. Предана банде с самого начала.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #191970 0%, #4169e1 100%);">
+                        <div class="character-placeholder">SC</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Шон Макгуайр</h3>
+                        <p class="character-role">Разведчик банды</p>
+                        <p class="character-desc">Ирландец с горячим темпераментом. Отличный стрелок и верный друг.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #800080 0%, #da70d6 100%);">
+                        <div class="character-placeholder">OK</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Молли О'Ши</h3>
+                        <p class="character-role">Подруга Датча</p>
+                        <p class="character-desc">Ирландка, которая присоединилась к банде через Датча. Умна и образованна.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 45%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 55%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="allies">
+                    <div class="character-image" style="background: linear-gradient(135deg, #00008b 0%, #0000cd 100%);">
+                        <div class="character-placeholder">SA</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Садио Адлер</h3>
+                        <p class="character-role">Вдова, ставшая охотницей за головами</p>
+                        <p class="character-desc">Сильная женщина, потерявшая мужа. Стала одним из лучших друзей Артура.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="allies">
+                    <div class="character-image" style="background: linear-gradient(135deg, #2f4f4f 0%, #708090 100%);">
+                        <div class="character-placeholder">CS</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Чарльз Смит</h3>
+                        <p class="character-role">Член банды, союзник</p>
+                        <p class="character-desc">Полукровка индейца и афроамериканца. Спокойный, мудрый и невероятно сильный.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 65%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="enemies">
+                    <div class="character-image" style="background: linear-gradient(135deg, #8b0000 0%, #ff0000 100%);">
+                        <div class="character-placeholder">AM</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Агент Милтон</h3>
+                        <p class="character-role">Агент Пинкертона</p>
+                        <p class="character-desc">Беспощадный детектив, преследующий банду Ван дер Линде. Главный антагонист.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="enemies">
+                    <div class="character-image" style="background: linear-gradient(135deg, #006400 0%, #00ff00 100%);">
+                        <div class="character-placeholder">CO</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Колм О'Дрисколл</h3>
+                        <p class="character-role">Лидер конкурирующей банды</p>
+                        <p class="character-desc">Злейший враг Датча. Лидер банды О'Дрисколлов, жестокий и безжалостный.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>RDR2<span>Wiki</span></h2>
+                    <p>Энциклопедия вселенной Red Dead Redemption 2</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="facts.html">Факты</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">VK</a>
+                        <a href="#" class="social-icon">TG</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RDR2 Wiki. Все права защищены. Не является официальным сайтом Rockstar Games.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

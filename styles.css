@@ -764,3 +764,402 @@ a {
 .mobile-menu-btn.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
 }
+
+/* ===================================
+   Page Hero (for individual pages)
+   =================================== */
+.page-hero {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f0f 100%);
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(201, 162, 39, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.1) 0%, transparent 50%);
+}
+
+.page-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(10, 10, 10, 0.8) 100%);
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.page-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* ===================================
+   Filter Buttons
+   =================================== */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 25px;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--bg-primary);
+}
+
+/* ===================================
+   Character Stats
+   =================================== */
+.character-stats {
+    margin-top: 15px;
+}
+
+.stat-bar {
+    margin-bottom: 10px;
+}
+
+.stat-bar span {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.stat-bar .bar {
+    height: 8px;
+    background-color: var(--bg-tertiary);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.stat-bar .fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* ===================================
+   Facts Grid & Tags
+   =================================== */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.fact-card {
+    display: flex;
+    gap: 20px;
+    background-color: var(--bg-card);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.fact-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-5px);
+}
+
+.fact-card.featured {
+    border-color: var(--accent-gold);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, var(--bg-card) 100%);
+}
+
+.fact-number {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--accent-primary);
+    line-height: 1;
+}
+
+.fact-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.tag-development { background-color: rgba(212, 175, 55, 0.2); color: #d4af37; }
+.tag-world { background-color: rgba(67, 233, 123, 0.2); color: #43e97b; }
+.tag-audio { background-color: rgba(102, 126, 234, 0.2); color: #667eea; }
+.tag-tech { background-color: rgba(240, 147, 251, 0.2); color: #f093fb; }
+.tag-secrets { background-color: rgba(250, 112, 154, 0.2); color: #fa709a; }
+.tag-weapons { background-color: rgba(245, 87, 108, 0.2); color: #f5576c; }
+.tag-animals { background-color: rgba(79, 172, 254, 0.2); color: #4facfe; }
+.tag-honor { background-color: rgba(48, 207, 208, 0.2); color: #30cfd0; }
+.tag-sales { background-color: rgba(161, 140, 209, 0.2); color: #a18cd1; }
+.tag-details { background-color: rgba(132, 250, 176, 0.2); color: #84fab0; }
+
+/* ===================================
+   Gallery Full Page
+   =================================== */
+.gallery-grid-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gallery-caption {
+    padding: 15px;
+    background-color: var(--bg-card);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: var(--text-primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: var(--text-primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+.lightbox-image {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--bg-tertiary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.lightbox-caption {
+    margin-top: 20px;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}
+
+/* ===================================
+   Weapons Full Page
+   =================================== */
+.weapons-grid-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.weapon-stats-detailed {
+    margin-top: 20px;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.stat-row span {
+    min-width: 100px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background-color: var(--bg-tertiary);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+/* ===================================
+   Additional Responsive Styles
+   =================================== */
+@media (max-width: 768px) {
+    .page-hero {
+        height: 300px;
+    }
+    
+    .page-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .filter-container {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-item.large {
+        grid-column: span 1;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    
+    .lightbox-prev {
+        left: 10px;
+    }
+    
+    .lightbox-next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .weapons-grid-full {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .stat-row span {
+        min-width: auto;
+    }
+}

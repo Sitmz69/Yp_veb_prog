@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оружие - RDR2 Encyclopedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>RDR2<span>Wiki</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="characters.html" class="nav-link">Персонажи</a></li>
+                        <li><a href="guides.html" class="nav-link">Гайды</a></li>
+                        <li><a href="facts.html" class="nav-link">Факты</a></li>
+                        <li><a href="gallery.html" class="nav-link">Галерея</a></li>
+                        <li><a href="weapons.html" class="nav-link active">Оружие</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+            <li><a href="characters.html" class="mobile-nav-link">Персонажи</a></li>
+            <li><a href="guides.html" class="mobile-nav-link">Гайды</a></li>
+            <li><a href="facts.html" class="mobile-nav-link">Факты</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">Галерея</a></li>
+            <li><a href="weapons.html" class="mobile-nav-link">Оружие</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Оружие</h1>
+                <p>Полный арсенал Дикого Запада</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapons Section -->
+    <section class="section weapons-page">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="pistols">Пистолеты</button>
+                <button class="filter-btn" data-filter="revolvers">Револьверы</button>
+                <button class="filter-btn" data-filter="rifles">Винтовки</button>
+                <button class="filter-btn" data-filter="shotguns">Дробовики</button>
+                <button class="filter-btn" data-filter="melee">Ближний бой</button>
+                <button class="filter-btn" data-filter="throwing">Метательное</button>
+            </div>
+
+            <!-- Weapons Grid -->
+            <div class="weapons-grid-full">
+                <div class="weapon-card" data-category="revolvers">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Cattleman Revolver</h3>
+                    <p>Классический револьвер, надёжное оружие для любых ситуаций.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="revolvers">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Schofield Revolver</h3>
+                    <p>Мощный револьвер с отличной точностью и скорострельностью.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="pistols">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Mauser Pistol</h3>
+                    <p>Быстрый полуавтоматический пистолет с большим магазином.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="rifles">
+                    <div class="weapon-icon">🎯</div>
+                    <h3>Bolt Action Rifle</h3>
+                    <p>Точная винтовка для дальних дистанций с высоким уроном.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="rifles">
+                    <div class="weapon-icon">🎯</div>
+                    <h3>Carbine Repeater</h3>
+                    <p>Универсальная винтовка, популярная среди ковбоев.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="shotguns">
+                    <div class="weapon-icon">💥</div>
+                    <h3>Pump Action Shotgun</h3>
+                    <p>Мощный дробовик для ближнего боя.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 45%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="shotguns">
+                    <div class="weapon-icon">💥</div>
+                    <h3>Double Barrel Shotgun</h3>
+                    <p>Двуствольный дробовик с devastating уроном вблизи.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="melee">
+                    <div class="weapon-icon">⚔️</div>
+                    <h3>Katana</h3>
+                    <p>Японский меч, редкое и смертоносное оружие ближнего боя.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорость</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="melee">
+                    <div class="weapon-icon">🔪</div>
+                    <h3>Hunting Knife</h3>
+                    <p>Охотничий нож, универсальное оружие для выживания.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорость</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="throwing">
+                    <div class="weapon-icon">🪓</div>
+                    <h3>Throwing Knives</h3>
+                    <p>Метательные ножи для тихих устранений на расстоянии.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 45%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорость</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="throwing">
+                    <div class="weapon-icon">🧨</div>
+                    <h3>Dynamic Bombs</h3>
+                    <p>Взрывчатка для уничтожения укрытий и групп врагов.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Радиус</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="pistols">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Volcanic Pistol</h3>
+                    <p>Мощный пистолет с высоким уроном, но медленной перезарядкой.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострельность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>RDR2<span>Wiki</span></h2>
+                    <p>Энциклопедия вселенной Red Dead Redemption 2</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="facts.html">Факты</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">VK</a>
+                        <a href="#" class="social-icon">TG</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RDR2 Wiki. Все права защищены. Не является официальным сайтом Rockstar Games.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
