@@ -210,4 +210,156 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%c🤠 RDR2 Encyclopedia', 'font-size: 24px; font-weight: bold; color: #c9a227;');
     console.log('%cДобро пожаловать в энциклопедию Red Dead Redemption 2!', 'font-size: 14px; color: #f5f5f5;');
     
+    // ===================================
+    // Filter Functionality for Characters, Weapons, Gallery, Facts
+    // ===================================
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.getAttribute('data-filter');
+            const parentSection = this.closest('.section') || this.closest('section');
+            
+            // Update active button
+            const siblingButtons = parentSection.querySelectorAll('.filter-btn');
+            siblingButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter items based on category
+            let itemsToFilter;
+            
+            if (parentSection.querySelector('.characters-grid')) {
+                itemsToFilter = parentSection.querySelectorAll('.character-card');
+            } else if (parentSection.querySelector('.weapons-grid-full')) {
+                itemsToFilter = parentSection.querySelectorAll('.weapon-card');
+            } else if (parentSection.querySelector('.gallery-grid-full')) {
+                itemsToFilter = parentSection.querySelectorAll('.gallery-item');
+            } else {
+                return;
+            }
+            
+            itemsToFilter.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                
+                if (filterValue === 'all' || itemCategory === filterValue) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+    
+    // ===================================
+    // Lightbox for Gallery
+    // ===================================
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.querySelector('.lightbox-image');
+    const lightboxCaption = document.querySelector('.lightbox-caption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    const galleryItemsFull = document.querySelectorAll('.gallery-grid-full .gallery-item');
+    
+    let currentGalleryIndex = 0;
+    let visibleGalleryItems = [];
+    
+    if (lightbox && galleryItemsFull.length > 0) {
+        // Collect visible gallery items
+        function updateVisibleItems() {
+            visibleGalleryItems = Array.from(galleryItemsFull).filter(item => {
+                return item.style.display !== 'none';
+            });
+        }
+        
+        // Open lightbox
+        galleryItemsFull.forEach((item, index) => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                updateVisibleItems();
+                currentGalleryIndex = visibleGalleryItems.indexOf(item);
+                openLightbox(item);
+            });
+        });
+        
+        function openLightbox(item) {
+            const galleryImage = item.querySelector('.gallery-image');
+            const caption = item.querySelector('.gallery-caption');
+            const backgroundStyle = galleryImage.style.background;
+            const textContent = galleryImage.querySelector('span').textContent;
+            
+            lightboxImage.style.background = backgroundStyle;
+            lightboxImage.innerHTML = `<span style="font-size: 2rem;">${textContent}</span>`;
+            lightboxCaption.textContent = caption ? caption.textContent : '';
+            
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        function showPrevImage() {
+            if (visibleGalleryItems.length === 0) return;
+            currentGalleryIndex = (currentGalleryIndex - 1 + visibleGalleryItems.length) % visibleGalleryItems.length;
+            openLightbox(visibleGalleryItems[currentGalleryIndex]);
+        }
+        
+        function showNextImage() {
+            if (visibleGalleryItems.length === 0) return;
+            currentGalleryIndex = (currentGalleryIndex + 1) % visibleGalleryItems.length;
+            openLightbox(visibleGalleryItems[currentGalleryIndex]);
+        }
+        
+        // Close button
+        if (lightboxClose) {
+            lightboxClose.addEventListener('click', closeLightbox);
+        }
+        
+        // Navigation buttons
+        if (lightboxPrev) {
+            lightboxPrev.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showPrevImage();
+            });
+        }
+        
+        if (lightboxNext) {
+            lightboxNext.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showNextImage();
+            });
+        }
+        
+        // Close on click outside
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (!lightbox.classList.contains('active')) return;
+            
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                showPrevImage();
+            } else if (e.key === 'ArrowRight') {
+                showNextImage();
+            }
+        });
+    }
+
 });

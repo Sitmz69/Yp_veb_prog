@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - RDR2 Encyclopedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>RDR2<span>Wiki</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="characters.html" class="nav-link">Персонажи</a></li>
+                        <li><a href="guides.html" class="nav-link">Гайды</a></li>
+                        <li><a href="facts.html" class="nav-link">Факты</a></li>
+                        <li><a href="gallery.html" class="nav-link active">Галерея</a></li>
+                        <li><a href="weapons.html" class="nav-link">Оружие</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+            <li><a href="characters.html" class="mobile-nav-link">Персонажи</a></li>
+            <li><a href="guides.html" class="mobile-nav-link">Гайды</a></li>
+            <li><a href="facts.html" class="mobile-nav-link">Факты</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">Галерея</a></li>
+            <li><a href="weapons.html" class="mobile-nav-link">Оружие</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Галерея</h1>
+                <p>Красивые моменты и скриншоты из игры</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-page">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="landscapes">Пейзажи</button>
+                <button class="filter-btn" data-filter="characters">Персонажи</button>
+                <button class="filter-btn" data-filter="action">Экшен</button>
+                <button class="filter-btn" data-filter="animals">Животные</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid-full">
+                <div class="gallery-item" data-category="landscapes">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);">
+                        <span>Закат в прерии</span>
+                    </div>
+                    <div class="gallery-caption">Закат над Великими равнинами</div>
+                </div>
+
+                <div class="gallery-item" data-category="characters">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span>Артур Морган</span>
+                    </div>
+                    <div class="gallery-caption">Артур в своём лагере</div>
+                </div>
+
+                <div class="gallery-item" data-category="action">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span>Перестрелка</span>
+                    </div>
+                    <div class="gallery-caption">Банда в бою</div>
+                </div>
+
+                <div class="gallery-item" data-category="animals">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span>Дикий мустанг</span>
+                    </div>
+                    <div class="gallery-caption">Мустанг на свободе</div>
+                </div>
+
+                <div class="gallery-item large" data-category="landscapes">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <span>Горы Амабарино</span>
+                    </div>
+                    <div class="gallery-caption">Снежные вершины гор Амабарино</div>
+                </div>
+
+                <div class="gallery-item" data-category="characters">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span>Датч</span>
+                    </div>
+                    <div class="gallery-caption">Датч Ван дер Линде</div>
+                </div>
+
+                <div class="gallery-item" data-category="action">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <span>Погоня</span>
+                    </div>
+                    <div class="gallery-caption">Погоня на лошадях</div>
+                </div>
+
+                <div class="gallery-item" data-category="animals">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <span>Гризли</span>
+                    </div>
+                    <div class="gallery-caption">Легендарный гризли</div>
+                </div>
+
+                <div class="gallery-item" data-category="landscapes">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                        <span>Долина Лемойн</span>
+                    </div>
+                    <div class="gallery-caption">Болота Лемойна на рассвете</div>
+                </div>
+
+                <div class="gallery-item" data-category="characters">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                        <span>Садио</span>
+                    </div>
+                    <div class="gallery-caption">Садио Адлер</div>
+                </div>
+
+                <div class="gallery-item large" data-category="action">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                        <span>Ограбление поезда</span>
+                    </div>
+                    <div class="gallery-caption">Большое ограбление</div>
+                </div>
+
+                <div class="gallery-item" data-category="animals">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                        <span>Олень</span>
+                    </div>
+                    <div class="gallery-caption">Благородный олень в лесу</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Закрыть">&times;</button>
+        <button class="lightbox-prev" aria-label="Предыдущее">&#10094;</button>
+        <button class="lightbox-next" aria-label="Следующее">&#10095;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-image"></div>
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>RDR2<span>Wiki</span></h2>
+                    <p>Энциклопедия вселенной Red Dead Redemption 2</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="facts.html">Факты</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">VK</a>
+                        <a href="#" class="social-icon">TG</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RDR2 Wiki. Все права защищены. Не является официальным сайтом Rockstar Games.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
