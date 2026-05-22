@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header / Navigation -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -34,7 +33,6 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <ul class="mobile-nav-list">
             <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
@@ -46,7 +44,6 @@
         </ul>
     </div>
 
-    <!-- Page Hero -->
     <section class="page-hero">
         <div class="hero-overlay"></div>
         <div class="container">
@@ -57,10 +54,8 @@
         </div>
     </section>
 
-    <!-- Weapons Section -->
     <section class="section weapons-page">
         <div class="container">
-            <!-- Filters -->
             <div class="filter-container">
                 <button class="filter-btn active" data-filter="all">Все</button>
                 <button class="filter-btn" data-filter="pistols">Пистолеты</button>
@@ -71,19 +66,18 @@
                 <button class="filter-btn" data-filter="throwing">Метательное</button>
             </div>
 
-            <!-- Weapons Grid -->
             <div class="weapons-grid-full">
                 <div class="weapon-card" data-category="revolvers">
                     <div class="weapon-icon">🔫</div>
                     <h3>Cattleman Revolver</h3>
-                    <p>Классический револьвер, надёжное оружие для любых ситуаций.</p>
+                    <p>Классический револьвер, надёжное оружие для любых ситуаций. Стартовое оружие Артура.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
                             <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
+                            <span>Скорострел.</span>
                             <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
                         </div>
                         <div class="stat-row">
@@ -100,14 +94,14 @@
                 <div class="weapon-card" data-category="revolvers">
                     <div class="weapon-icon">🔫</div>
                     <h3>Schofield Revolver</h3>
-                    <p>Мощный револьвер с отличной точностью и скорострельностью.</p>
+                    <p>Мощный револьвер с отличной точностью. Фаворит среди стрелков.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
                             <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
+                            <span>Скорострел.</span>
                             <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
                         </div>
                         <div class="stat-row">
@@ -121,17 +115,41 @@
                     </div>
                 </div>
 
-                <div class="weapon-card" data-category="pistols">
+                <div class="weapon-card" data-category="revolvers">
                     <div class="weapon-icon">🔫</div>
-                    <h3>Mauser Pistol</h3>
-                    <p>Быстрый полуавтоматический пистолет с большим магазином.</p>
+                    <h3>Double-Action Revolver</h3>
+                    <p>Быстрый револьвер с высокой Скорострельностью, но низкой точностью.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
                             <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="pistols">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Mauser Pistol</h3>
+                    <p>Полуавтоматический пистолет с большим магазином и высокой Скорострельностью</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
                             <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                         </div>
                         <div class="stat-row">
@@ -145,17 +163,65 @@
                     </div>
                 </div>
 
+                <div class="weapon-card" data-category="pistols">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Semi-Automatic Pistol</h3>
+                    <p>Надёжный самозарядный пистолет. Сбалансированное оружие для ближнего боя.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="pistols">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Volcanic Pistol</h3>
+                    <p>Мощный пистолет с высоким уроном, но медленной перезарядкой и низкой Скорострельностью</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="weapon-card" data-category="rifles">
                     <div class="weapon-icon">🎯</div>
                     <h3>Bolt Action Rifle</h3>
-                    <p>Точная винтовка для дальних дистанций с высоким уроном.</p>
+                    <p>Точная винтовка для дальних дистанций с высоким уроном. Идеальна для охоты.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
                             <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
+                            <span>Скорострел.</span>
                             <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
                         </div>
                         <div class="stat-row">
@@ -172,14 +238,14 @@
                 <div class="weapon-card" data-category="rifles">
                     <div class="weapon-icon">🎯</div>
                     <h3>Carbine Repeater</h3>
-                    <p>Универсальная винтовка, популярная среди ковбоев.</p>
+                    <p>Универсальная винтовка, сбалансированная по всем параметрам. Популярна среди ковбоев.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
                             <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
+                            <span>Скорострел.</span>
                             <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
                         </div>
                         <div class="stat-row">
@@ -193,17 +259,89 @@
                     </div>
                 </div>
 
+                <div class="weapon-card" data-category="rifles">
+                    <div class="weapon-icon">🎯</div>
+                    <h3>Lancaster Repeater</h3>
+                    <p>Одна из лучших винтовок в игре. Отличная точность и Скорострельность.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 68%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 82%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 78%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="rifles">
+                    <div class="weapon-icon">🎯</div>
+                    <h3>Springfield Rifle</h3>
+                    <p>Однозарядная винтовка с огромным уроном. Лучший выбор для охоты на крупную дичь.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 25%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="rifles">
+                    <div class="weapon-icon">🎯</div>
+                    <h3>Carcano Rifle</h3>
+                    <p>Снайперская винтовка с оптическим прицелом. Максимальная дальность стрельбы.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 98%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="weapon-card" data-category="shotguns">
                     <div class="weapon-icon">💥</div>
                     <h3>Pump Action Shotgun</h3>
-                    <p>Мощный дробовик для ближнего боя.</p>
+                    <p>Надёжный помповый дробовик для ближнего боя. Высокий урон, средняя Скорострельность.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
                             <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
+                            <span>Скорострел.</span>
                             <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
                         </div>
                         <div class="stat-row">
@@ -220,14 +358,14 @@
                 <div class="weapon-card" data-category="shotguns">
                     <div class="weapon-icon">💥</div>
                     <h3>Double Barrel Shotgun</h3>
-                    <p>Двуствольный дробовик с devastating уроном вблизи.</p>
+                    <p>Двуствольный дробовик с огромным уроном за выстрел. Два ствола — два шанса.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
                             <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
+                            <span>Скорострел.</span>
                             <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
                         </div>
                         <div class="stat-row">
@@ -241,10 +379,58 @@
                     </div>
                 </div>
 
+                <div class="weapon-card" data-category="shotguns">
+                    <div class="weapon-icon">💥</div>
+                    <h3>Semi-Auto Shotgun</h3>
+                    <p>Самозарядный дробовик с высокой Скорострельностью. Быстро опустошает магазин.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="shotguns">
+                    <div class="weapon-icon">💥</div>
+                    <h3>Sawed-Off Shotgun</h3>
+                    <p>Обрез двустволки. Помещается в слот пистолета. Максимальный урон вблизи.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорострел.</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Точность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 25%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 20%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="weapon-card" data-category="melee">
                     <div class="weapon-icon">⚔️</div>
                     <h3>Katana</h3>
-                    <p>Японский меч, редкое и смертоносное оружие ближнего боя.</p>
+                    <p>Японский меч, редкое и смертоносное оружие. Можно найти в одной из скрытых локаций.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
@@ -264,7 +450,7 @@
                 <div class="weapon-card" data-category="melee">
                     <div class="weapon-icon">🔪</div>
                     <h3>Hunting Knife</h3>
-                    <p>Охотничий нож, универсальное оружие для выживания.</p>
+                    <p>Охотничий нож, универсальное оружие для выживания. Используется для разделки туш.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
@@ -281,10 +467,50 @@
                     </div>
                 </div>
 
-                <div class="weapon-card" data-category="throwing">
+                <div class="weapon-card" data-category="melee">
                     <div class="weapon-icon">🪓</div>
+                    <h3>Hatchet</h3>
+                    <p>Топор для рубки и боя. Наносит высокий урон, но медленный в замахе.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорость</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 45%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="melee">
+                    <div class="weapon-icon">🏏</div>
+                    <h3>Machete</h3>
+                    <p>Мачете — эффективное оружие ближнего боя с хорошим радиусом поражения.</p>
+                    <div class="weapon-stats-detailed">
+                        <div class="stat-row">
+                            <span>Урон</span>
+                            <div class="progress-bar"><div class="progress" style="width: 78%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Скорость</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Дальность</span>
+                            <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="throwing">
+                    <div class="weapon-icon">🔪</div>
                     <h3>Throwing Knives</h3>
-                    <p>Метательные ножи для тихих устранений на расстоянии.</p>
+                    <p>Метательные ножи для тихих устранений на расстоянии. Можно вернуть из тела.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
@@ -303,8 +529,8 @@
 
                 <div class="weapon-card" data-category="throwing">
                     <div class="weapon-icon">🧨</div>
-                    <h3>Dynamic Bombs</h3>
-                    <p>Взрывчатка для уничтожения укрытий и групп врагов.</p>
+                    <h3>Dynamite</h3>
+                    <p>Взрывчатка для уничтожения укрытий и групп врагов. Огромный радиус поражения.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
@@ -321,26 +547,22 @@
                     </div>
                 </div>
 
-                <div class="weapon-card" data-category="pistols">
-                    <div class="weapon-icon">🔫</div>
-                    <h3>Volcanic Pistol</h3>
-                    <p>Мощный пистолет с высоким уроном, но медленной перезарядкой.</p>
+                <div class="weapon-card" data-category="throwing">
+                    <div class="weapon-icon">💣</div>
+                    <h3>Molotov Cocktail</h3>
+                    <p>Зажигательная смесь. Поджигает площадь, нанося урон с течением времени.</p>
                     <div class="weapon-stats-detailed">
                         <div class="stat-row">
                             <span>Урон</span>
-                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>Скорострельность</span>
-                            <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
-                        </div>
-                        <div class="stat-row">
-                            <span>Точность</span>
-                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            <span>Радиус</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
                         </div>
                         <div class="stat-row">
                             <span>Дальность</span>
-                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                            <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
                         </div>
                     </div>
                 </div>
@@ -348,7 +570,74 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="section ammo-section">
+        <div class="container">
+            <h2 class="section-title">Типы патронов</h2>
+            <p class="section-subtitle">Разные боеприпасы для разных задач</p>
+            <div class="ammo-grid">
+                <div class="ammo-card">
+                    <div class="ammo-icon">🔴</div>
+                    <h3>Обычные патроны</h3>
+                    <p>Стандартные боеприпасы, продаются в любом магазине. Сбалансированы по урону и стоимости.</p>
+                </div>
+                <div class="ammo-card">
+                    <div class="ammo-icon">🟡</div>
+                    <h3>High Velocity</h3>
+                    <p>Патроны с повышенной скоростью пули. Увеличивают дальность и точность стрельбы.</p>
+                </div>
+                <div class="ammo-card">
+                    <div class="ammo-icon">⚪</div>
+                    <h3>Split Point</h3>
+                    <p>Пули с крестообразным надрезом. Наносят повышенный урон за счёт деформации при попадании.</p>
+                </div>
+                <div class="ammo-card">
+                    <div class="ammo-icon">🟢</div>
+                    <h3>Express</h3>
+                    <p>Экспресс-патроны с максимальным уроном. Снижают дальность, но пробивают броню.</p>
+                </div>
+                <div class="ammo-card">
+                    <div class="ammo-icon">🔵</div>
+                    <h3>Практические</h3>
+                    <p>Эконом-вариант для тренировки. Меньший урон, но минимальная стоимость.</p>
+                </div>
+                <div class="ammo-card">
+                    <div class="ammo-icon">💀</div>
+                    <h3>Разрывные (Explosive)</h3>
+                    <p>Крайне редкие патроны, доступные только после прохождения сюжета. Взрываются при попадании.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section customization-section">
+        <div class="container">
+            <h2 class="section-title">Кастомизация оружия</h2>
+            <p class="section-subtitle">Улучшение и персонализация арсенала</p>
+            <div class="customization-grid">
+                <div class="custom-card">
+                    <div class="custom-icon">🎨</div>
+                    <h3>Визуальные улучшения</h3>
+                    <p>Металл, дерево, гравировка — измените внешний вид вашего оружия в оружейной мастерской. Доступны различные цвета металла: синий, бронзовый, серебряный, золотой.</p>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-icon">🔧</div>
+                    <h3>Технические улучшения</h3>
+                    <p>Замена ствола, приклада, прицельных приспособлений. Увеличивает характеристики оружия. Каждое улучшение ощутимо меняет поведение оружия.</p>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-icon">🧼</div>
+                    <h3>Уход за оружием</h3>
+                    <p>Регулярная чистка оружия обязательна. Грязное оружие быстрее загрязняется, снижается точность и Скорострел.. Используйте масло и чистящие средства.</p>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-icon">📦</div>
+                    <h3>Боезапас</h3>
+                    <p>Всегда носите с собой максимум патронов. Пополняйте запасы у торговцев или снимайте с тел врагов. Разные типы боеприпасов занимают один слот.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">

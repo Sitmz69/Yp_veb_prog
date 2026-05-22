@@ -1,0 +1,539 @@
+/* ===================================
+   RDR2 Encyclopedia - Page Sections
+   Quotes, Timeline, Relationships, Ammo,
+   Customization, Guide Articles, Gallery, Lightbox
+   =================================== */
+
+/* --- Quotes Section --- */
+.quotes-section {
+    background-color: var(--bg-secondary);
+}
+
+.quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.quote-card {
+    padding: 30px;
+    border-left: 4px solid var(--accent-gold);
+}
+
+.quote-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-3px);
+}
+
+.quote-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.quote-author {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* --- Relationships Section --- */
+.relationships-section {
+    background-color: var(--bg-primary);
+}
+
+.relationships-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.relation-card {
+    padding: 25px 30px;
+}
+
+.relation-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-3px);
+}
+
+.relation-characters {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 12px;
+}
+
+.relation-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Timeline Section --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-primary), var(--accent-gold));
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.timeline-content {
+    width: calc(50% - 40px);
+    background-color: var(--bg-card);
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    margin-top: 35px;
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    border-color: var(--accent-primary);
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+}
+
+/* --- Category Info (Weapons Page) --- */
+.category-info {
+    padding: 30px;
+    margin-bottom: 40px;
+    border-left: 4px solid var(--accent-primary);
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.category-info h3 {
+    font-size: 1.4rem;
+    color: var(--accent-gold);
+    margin-bottom: 12px;
+}
+
+.category-info p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.category-section {
+    margin-bottom: 50px;
+}
+
+.category-section:last-child {
+    margin-bottom: 0;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.category-header h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+
+.category-header .cat-icon {
+    font-size: 2rem;
+}
+
+/* --- Ammo Types --- */
+.ammo-section {
+    background-color: var(--bg-secondary);
+}
+
+.ammo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.ammo-card {
+    padding: 25px;
+}
+
+.ammo-card:hover {
+    border-color: var(--accent-gold);
+}
+
+.ammo-card h3 {
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+}
+
+.ammo-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.ammo-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* --- Weapon Customization --- */
+.customization-section {
+    background-color: var(--bg-primary);
+}
+
+.customization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.custom-card {
+    padding: 25px;
+    text-align: center;
+}
+
+.custom-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-5px);
+}
+
+.custom-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.custom-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.custom-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* --- Guide Articles --- */
+.guide-content-section {
+    background-color: var(--bg-secondary);
+}
+
+.guide-article {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    padding: 35px;
+}
+
+.guide-article:last-child {
+    margin-bottom: 0;
+}
+
+.guide-article:hover {
+    border-color: var(--accent-primary);
+}
+
+.guide-article-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.guide-article-icon {
+    font-size: 2.5rem;
+}
+
+.guide-article h2 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+}
+
+.guide-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+}
+
+.guide-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-muted);
+}
+
+.guide-meta .difficulty {
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.guide-article p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.guide-article ul,
+.guide-article ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.guide-article li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.guide-article h3 {
+    font-size: 1.15rem;
+    color: var(--accent-secondary);
+    margin: 20px 0 10px;
+}
+
+.guide-tip {
+    background-color: rgba(212, 175, 55, 0.1);
+    border-left: 4px solid var(--accent-gold);
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 15px;
+}
+
+.guide-tip strong {
+    color: var(--accent-gold);
+}
+
+.guide-tip p {
+    margin-bottom: 0;
+}
+
+/* --- Facts Groups --- */
+.fact-group {
+    margin-bottom: 50px;
+}
+
+.fact-group:last-child {
+    margin-bottom: 0;
+}
+
+.fact-group-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.fact-group-icon {
+    font-size: 1.8rem;
+}
+
+/* --- Gallery Featured --- */
+.gallery-featured-section {
+    background-color: var(--bg-secondary);
+}
+
+.gallery-featured {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery-featured-main {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-featured-main:hover {
+    transform: scale(1.02);
+}
+
+.gallery-featured-main .gallery-image {
+    height: 400px;
+}
+
+.gallery-featured-side {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.gallery-featured-side .gallery-image {
+    height: 190px;
+}
+
+.gallery-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-stat-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-stat-card:hover {
+    border-color: var(--accent-gold);
+}
+
+.gallery-stat-number {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+.gallery-stat-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* --- Lightbox --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: var(--text-primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: var(--text-primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+.lightbox-image {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--bg-tertiary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.lightbox-caption {
+    margin-top: 20px;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}

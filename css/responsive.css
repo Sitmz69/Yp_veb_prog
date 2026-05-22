@@ -1,0 +1,168 @@
+/* ===================================
+   RDR2 Encyclopedia - Responsive
+   All Media Queries
+   =================================== */
+
+@media (max-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .facts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item.large {
+        grid-column: span 2;
+    }
+
+    .tab-buttons {
+        justify-content: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .page-hero {
+        height: 300px;
+    }
+
+    .page-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .filter-container {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .lightbox-prev {
+        left: 10px;
+    }
+
+    .lightbox-next {
+        right: 10px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-year {
+        left: 20px;
+        transform: translateX(-50%);
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    .timeline-content,
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        width: 100%;
+        margin: 35px 0 0 0;
+    }
+
+    .gallery-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-featured-main .gallery-image {
+        height: 250px;
+    }
+
+    .guide-article {
+        padding: 25px 20px;
+    }
+
+    .guide-article h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .characters-grid,
+    .guides-grid,
+    .gallery-grid,
+    .weapons-grid,
+    .weapons-grid-full,
+    .facts-grid,
+    .quotes-grid,
+    .relationships-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item.large {
+        grid-column: span 1;
+    }
+
+    .stat-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .stat-row span {
+        min-width: auto;
+    }
+
+    .guide-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

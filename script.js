@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe cards and items for animation
-    const animatedElements = document.querySelectorAll('.character-card, .guide-card, .fact-item, .weapon-card, .gallery-item');
+    const animatedElements = document.querySelectorAll('.character-card, .guide-card, .fact-item, .fact-card, .weapon-card, .gallery-item, .quote-card, .relation-card, .timeline-content, .ammo-card, .custom-card, .guide-article, .gallery-stat-card');
     
     animatedElements.forEach(el => {
         el.style.opacity = '0';
@@ -140,17 +140,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ===================================
-    // Gallery Lightbox (Simple Implementation)
+    // Gallery Item Click Tracking
     // ===================================
     const galleryItems = document.querySelectorAll('.gallery-item');
     
     galleryItems.forEach(item => {
         item.addEventListener('click', function() {
             const placeholder = this.querySelector('.gallery-placeholder');
-            const text = placeholder.querySelector('span').textContent;
-            
-            // Create simple alert for demo (in real implementation, this would open a lightbox)
-            console.log(`Gallery item clicked: ${text}`);
+            if (placeholder) {
+                const text = placeholder.querySelector('span').textContent;
+                console.log(`Gallery item clicked: ${text}`);
+            }
         });
     });
     
@@ -268,24 +268,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxPrev = document.querySelector('.lightbox-prev');
     const lightboxNext = document.querySelector('.lightbox-next');
     const galleryItemsFull = document.querySelectorAll('.gallery-grid-full .gallery-item');
+    const galleryFeaturedItems = document.querySelectorAll('.gallery-featured .gallery-item');
     
     let currentGalleryIndex = 0;
     let visibleGalleryItems = [];
+    let allLightboxItems = [];
     
-    if (lightbox && galleryItemsFull.length > 0) {
+    if (lightbox && (galleryItemsFull.length > 0 || galleryFeaturedItems.length > 0)) {
+        allLightboxItems = [...galleryItemsFull, ...galleryFeaturedItems];
+        
         // Collect visible gallery items
         function updateVisibleItems() {
-            visibleGalleryItems = Array.from(galleryItemsFull).filter(item => {
+            visibleGalleryItems = Array.from(allLightboxItems).filter(item => {
                 return item.style.display !== 'none';
             });
+            if (visibleGalleryItems.length === 0) {
+                visibleGalleryItems = Array.from(allLightboxItems);
+            }
         }
         
         // Open lightbox
-        galleryItemsFull.forEach((item, index) => {
+        allLightboxItems.forEach((item) => {
             item.addEventListener('click', function(e) {
                 e.preventDefault();
                 updateVisibleItems();
                 currentGalleryIndex = visibleGalleryItems.indexOf(item);
+                if (currentGalleryIndex === -1) currentGalleryIndex = 0;
                 openLightbox(item);
             });
         });

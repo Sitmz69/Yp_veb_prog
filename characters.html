@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header / Navigation -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -34,7 +33,6 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <ul class="mobile-nav-list">
             <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
@@ -46,7 +44,6 @@
         </ul>
     </div>
 
-    <!-- Page Hero -->
     <section class="page-hero">
         <div class="hero-overlay"></div>
         <div class="container">
@@ -57,10 +54,8 @@
         </div>
     </section>
 
-    <!-- Characters Section -->
     <section class="section characters-page">
         <div class="container">
-            <!-- Filters -->
             <div class="filter-container">
                 <button class="filter-btn active" data-filter="all">Все</button>
                 <button class="filter-btn" data-filter="gang">Банда Ван дер Линде</button>
@@ -69,7 +64,6 @@
                 <button class="filter-btn" data-filter="other">Другие</button>
             </div>
 
-            <!-- Characters Grid -->
             <div class="characters-grid">
                 <div class="character-card" data-category="gang">
                     <div class="character-image" style="background: linear-gradient(135deg, #8b0000 0%, #c41e3a 100%);">
@@ -92,6 +86,15 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 75%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Стрелок</span>
+                            <span class="char-tag">Охотник</span>
+                            <span class="char-tag">Выживальщик</span>
                         </div>
                     </div>
                 </div>
@@ -117,6 +120,15 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 95%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Интеллект</span>
+                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Лидер</span>
+                            <span class="char-tag">Стратег</span>
+                            <span class="char-tag">Оратор</span>
                         </div>
                     </div>
                 </div>
@@ -128,7 +140,7 @@
                     <div class="character-info">
                         <h3>Хозеа Мэтьюз</h3>
                         <p class="character-role">Правая рука Датча</p>
-                        <p class="character-desc">Старейший член банды, голос разума. Опытный мошенник и стратег.</p>
+                        <p class="character-desc">Старейший член банды, голос разума. Опытный мошенник и стратег, друг Артура.</p>
                         <div class="character-stats">
                             <div class="stat-bar">
                                 <span>Сила</span>
@@ -142,6 +154,15 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 90%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Мудрость</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Мошенник</span>
+                            <span class="char-tag">Дипломат</span>
+                            <span class="char-tag">Наставник</span>
                         </div>
                     </div>
                 </div>
@@ -167,18 +188,27 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 70%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Хозяйство</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Хозяйка</span>
+                            <span class="char-tag">Строгая</span>
+                            <span class="char-tag">Преданная</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="character-card" data-category="gang">
                     <div class="character-image" style="background: linear-gradient(135deg, #191970 0%, #4169e1 100%);">
-                        <div class="character-placeholder">SC</div>
+                        <div class="character-placeholder">SM</div>
                     </div>
                     <div class="character-info">
                         <h3>Шон Макгуайр</h3>
                         <p class="character-role">Разведчик банды</p>
-                        <p class="character-desc">Ирландец с горячим темпераментом. Отличный стрелок и верный друг.</p>
+                        <p class="character-desc">Ирландец с горячим темпераментом. Отличный стрелок, говорун и верный друг.</p>
                         <div class="character-stats">
                             <div class="stat-bar">
                                 <span>Сила</span>
@@ -192,31 +222,15 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 80%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 82%;"></div></div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="character-card" data-category="gang">
-                    <div class="character-image" style="background: linear-gradient(135deg, #800080 0%, #da70d6 100%);">
-                        <div class="character-placeholder">OK</div>
-                    </div>
-                    <div class="character-info">
-                        <h3>Молли О'Ши</h3>
-                        <p class="character-role">Подруга Датча</p>
-                        <p class="character-desc">Ирландка, которая присоединилась к банде через Датча. Умна и образованна.</p>
-                        <div class="character-stats">
-                            <div class="stat-bar">
-                                <span>Сила</span>
-                                <div class="bar"><div class="fill" style="width: 45%;"></div></div>
-                            </div>
-                            <div class="stat-bar">
-                                <span>Меткость</span>
-                                <div class="bar"><div class="fill" style="width: 55%;"></div></div>
-                            </div>
-                            <div class="stat-bar">
-                                <span>Харизма</span>
-                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
-                            </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Разведчик</span>
+                            <span class="char-tag">Болтун</span>
+                            <span class="char-tag">Ирландец</span>
                         </div>
                     </div>
                 </div>
@@ -226,9 +240,9 @@
                         <div class="character-placeholder">SA</div>
                     </div>
                     <div class="character-info">
-                        <h3>Садио Адлер</h3>
+                        <h3>Сэди Адлер</h3>
                         <p class="character-role">Вдова, ставшая охотницей за головами</p>
-                        <p class="character-desc">Сильная женщина, потерявшая мужа. Стала одним из лучших друзей Артура.</p>
+                        <p class="character-desc">Сильная женщина, потерявшая мужа. Стала одним из лучших друзей Артура и грозным бойцом.</p>
                         <div class="character-stats">
                             <div class="stat-bar">
                                 <span>Сила</span>
@@ -242,6 +256,15 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 70%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Охотница</span>
+                            <span class="char-tag">Мстительница</span>
+                            <span class="char-tag">Выживальщица</span>
                         </div>
                     </div>
                 </div>
@@ -253,7 +276,7 @@
                     <div class="character-info">
                         <h3>Чарльз Смит</h3>
                         <p class="character-role">Член банды, союзник</p>
-                        <p class="character-desc">Полукровка индейца и афроамериканца. Спокойный, мудрый и невероятно сильный.</p>
+                        <p class="character-desc">Спокойный, мудрый и невероятно сильный. Полукровка с благородным сердцем.</p>
                         <div class="character-stats">
                             <div class="stat-bar">
                                 <span>Сила</span>
@@ -267,6 +290,185 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 65%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Мудрость</span>
+                                <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Воин</span>
+                            <span class="char-tag">Охотник</span>
+                            <span class="char-tag">Праведный</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #696969 0%, #a9a9a9 100%);">
+                        <div class="character-placeholder">JM</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Джон Марстон</h3>
+                        <p class="character-role">Член банды</p>
+                        <p class="character-desc">Молодой ковбой, пытающийся найти свой путь. Муж Абигейл, отец Джека.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 78%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Ковбой</span>
+                            <span class="char-tag">Стрелок</span>
+                            <span class="char-tag">Семьянин</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #800080 0%, #da70d6 100%);">
+                        <div class="character-placeholder">MO</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Молли О'Ши</h3>
+                        <p class="character-role">Подруга Датча</p>
+                        <p class="character-desc">Ирландка, присоединившаяся к банде ради Датча. Умна, образованна, но несчастна.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 45%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 55%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Интеллект</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Образованная</span>
+                            <span class="char-tag">Гордая</span>
+                            <span class="char-tag">Одинокая</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #b22222 0%, #dc143c 100%);">
+                        <div class="character-placeholder">BW</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Билл Уильямсон</h3>
+                        <p class="character-role">Член банды, костяк</p>
+                        <p class="character-desc">Грубый и агрессивный, но преданный банде. Бывший военный с тяжёлым прошлым.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 35%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Выносливость</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Силач</span>
+                            <span class="char-tag">Грубиян</span>
+                            <span class="char-tag">Солдат</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #556b2f 0%, #6b8e23 100%);">
+                        <div class="character-placeholder">JE</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Хавьер Эскуэла</h3>
+                        <p class="character-role">Член банды, костяк</p>
+                        <p class="character-desc">Мексиканский революционер отличный стрелок и музыкант. Предан Датчу до конца.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 82%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 78%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Революционер</span>
+                            <span class="char-tag">Музыкант</span>
+                            <span class="char-tag">Стрелок</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #4682b4 0%, #87ceeb 100%);">
+                        <div class="character-placeholder">LY</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Ленни Саммерс</h3>
+                        <p class="character-role">Член банды</p>
+                        <p class="character-desc">Молодой и энергичный афроамериканец. Образован, умён и верен банде.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 72%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 78%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Молодой</span>
+                            <span class="char-tag">Умный</span>
+                            <span class="char-tag">Быстрый</span>
                         </div>
                     </div>
                 </div>
@@ -292,6 +494,15 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 50%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Интеллект</span>
+                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Детектив</span>
+                            <span class="char-tag">Пинкертон</span>
+                            <span class="char-tag">Антагонист</span>
                         </div>
                     </div>
                 </div>
@@ -317,6 +528,219 @@
                                 <span>Харизма</span>
                                 <div class="bar"><div class="fill" style="width: 60%;"></div></div>
                             </div>
+                            <div class="stat-bar">
+                                <span>Жестокость</span>
+                                <div class="bar"><div class="fill" style="width: 98%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Лидер банды</span>
+                            <span class="char-tag">Жестокий</span>
+                            <span class="char-tag">Враг</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #d2691e 0%, #f4a460 100%);">
+                        <div class="character-placeholder">UN</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Дядя</h3>
+                        <p class="character-role">Член банды, бездельник</p>
+                        <p class="character-desc">Ленивый, но харизматичный старик. Постоянно жалуется на «люмбаго» и увиливает от работы.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 35%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Меткость</span>
+                                <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Лень</span>
+                                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Лентяй</span>
+                            <span class="char-tag">Шутник</span>
+                            <span class="char-tag">Старик</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="allies">
+                    <div class="character-image" style="background: linear-gradient(135deg, #9370db 0%, #ba55d3 100%);">
+                        <div class="character-placeholder">TP</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Тили Джексон</h3>
+                        <p class="character-role">Член банды</p>
+                        <p class="character-desc">Молодая афроамериканка, сбежавшая от жестокого прошлого. Нашла семью в банде.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 48%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Хитрость</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 82%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Хитрая</span>
+                            <span class="char-tag">Картёжница</span>
+                            <span class="char-tag">Выжившая</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="other">
+                    <div class="character-image" style="background: linear-gradient(135deg, #ff8c00 0%, #ffa500 100%);">
+                        <div class="character-placeholder">MR</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Мери-Бет Гэскилл</h3>
+                        <p class="character-role">Мечтательница банды</p>
+                        <p class="character-desc">Романтичная и добрая девушка, мечтающая стать писательницей.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Доброта</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Ум</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Интуиция</span>
+                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Писательница</span>
+                            <span class="char-tag">Добрая</span>
+                            <span class="char-tag">Романтик</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="allies">
+                    <div class="character-image" style="background: linear-gradient(135deg, #2e8b57 0%, #3cb371 100%);">
+                        <div class="character-placeholder">PW</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Пирсон</h3>
+                        <p class="character-role">Повар и припасы</p>
+                        <p class="character-desc">Бывший моряк, ставший поваром банды. Отвечает за еду и припасы.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Кулинария</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 55%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Хозяйство</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Повар</span>
+                            <span class="char-tag">Моряк</span>
+                            <span class="char-tag">Запасливый</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="gang">
+                    <div class="character-image" style="background: linear-gradient(135deg, #483d8b 0%, #6a5acd 100%);">
+                        <div class="character-placeholder">LS</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Леопольд Штраус</h3>
+                        <p class="character-role">Ростовщик банды</p>
+                        <p class="character-desc">Холодный и расчётливый австриец, управляющий финансовыми делами банды через ростовщичество.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Интеллект</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Хитрость</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 40%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Жадность</span>
+                                <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Ростовщик</span>
+                            <span class="char-tag">Хитрый</span>
+                            <span class="char-tag">Расчётливый</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="other">
+                    <div class="character-image" style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%);">
+                        <div class="character-placeholder">AF</div>
+                    </div>
+                    <div class="character-info">
+                        <h3>Абигейл Робертс</h3>
+                        <p class="character-role">Мать и хранительница</p>
+                        <p class="character-desc">Мать Джека, жена Джона. Прагматичная женщина, желающая лучшей жизни для своей семьи.</p>
+                        <div class="character-stats">
+                            <div class="stat-bar">
+                                <span>Сила</span>
+                                <div class="bar"><div class="fill" style="width: 55%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Харизма</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Мудрость</span>
+                                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span>Скорость</span>
+                                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="character-tags">
+                            <span class="char-tag">Мать</span>
+                            <span class="char-tag">Прагматичная</span>
+                            <span class="char-tag">Сильная</span>
                         </div>
                     </div>
                 </div>
@@ -324,7 +748,131 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="section quotes-section">
+        <div class="container">
+            <h2 class="section-title">Знаменитые цитаты</h2>
+            <p class="section-subtitle">Запоминающиеся фразы героев Red Dead Redemption 2</p>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <div class="quote-text">"We're thieves in a world that don't want us no more."</div>
+                    <div class="quote-author">— Артур Морган</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Have some goddamn faith!"</div>
+                    <div class="quote-author">— Датч Ван дер Линде</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"I gave you all I had. I did."</div>
+                    <div class="quote-author">— Артур Морган</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"I have a plan. I just need some money."</div>
+                    <div class="quote-author">— Датч Ван дер Линде</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"You don't get to live a bad life and die a good death."</div>
+                    <div class="quote-author">— Тили Джексон</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Revenge is a fool's game."</div>
+                    <div class="quote-author">— Артур Морган</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"I ain't got no quarrel with you, but I got a job to do."</div>
+                    <div class="quote-author">— Джон Марстон</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Compare yourself to who you were yesterday, not to who someone else is today."</div>
+                    <div class="quote-author">— Чарльз Смит</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section relationships-section">
+        <div class="container">
+            <h2 class="section-title">Отношения внутри банды</h2>
+            <p class="section-subtitle">Ключевые связи между персонажами</p>
+            <div class="relationships-grid">
+                <div class="relation-card">
+                    <div class="relation-characters">Артур ↔ Джон</div>
+                    <p>Братская дружба, проверенная годами. Артур был наставником для Джона, и их отношения прошли через многие испытания.</p>
+                </div>
+                <div class="relation-card">
+                    <div class="relation-characters">Датч ↔ Хозеа</div>
+                    <p>Многолетняя дружба и партнёрство. Хозеа — голос разума, который пытается сдерживать растущее безумие Датча.</p>
+                </div>
+                <div class="relation-card">
+                    <div class="relation-characters">Джон ↔ Абигейл</div>
+                    <p>Сложные отношения, полные любви и недоверия. Абигейл хочет стабильности, Джон боится ответственности.</p>
+                </div>
+                <div class="relation-card">
+                    <div class="relation-characters">Артур ↔ Датч</div>
+                    <p>Отношения отца и сына, которые рушатся по мере того, как Датч теряет рассудок, а Артур обретает совесть.</p>
+                </div>
+                <div class="relation-card">
+                    <div class="relation-characters">Сэди ↔ Артур</div>
+                    <p>Глубокая дружба, основанная на взаимном уважении. Сэди видит в Артуре человека, которым он может стать.</p>
+                </div>
+                <div class="relation-card">
+                    <div class="relation-characters">Майка ↔ Билл</div>
+                    <p>Тёмный союз двух агрессивных членов банды. Майка манипулирует Биллом, подпитывая его худшие инстинкты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section timeline-section">
+        <div class="container">
+            <h2 class="section-title">Хронология банды</h2>
+            <p class="section-subtitle">Ключевые события в истории банды Ван дер Линде</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1878</div>
+                    <div class="timeline-content">
+                        <h3>Основание банды</h3>
+                        <p>Датч Ван дер Линде и Хозеа Мэтьюз начинают свою преступную деятельность. К ним присоединяется юный Артур Морган.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1885</div>
+                    <div class="timeline-content">
+                        <h3>Расширение банды</h3>
+                        <p>К банде присоединяются Джон Марстон, Сьюзан Гримшо и другие ключевые члены. Начинается «золотая эра» банды.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1899</div>
+                    <div class="timeline-content">
+                        <h3>Ограбление в Блэкуотер</h3>
+                        <p>Неудачное ограбление парома, которое вынуждает банду бежать на восток и скрываться в горах. Начало событий RDR2.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1899</div>
+                    <div class="timeline-content">
+                        <h3>Распад банды</h3>
+                        <p>Предательство, смерть ключевых членов и растущее безумие Датча приводят к окончательному распаду банды.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1907</div>
+                    <div class="timeline-content">
+                        <h3>Эпилог</h3>
+                        <p>Джон Марстон строит ранчо с Абигейл и Джеком, пытаясь начать честную жизнь. Прошлое не отпускает.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1911</div>
+                    <div class="timeline-content">
+                        <h3>События RDR1</h3>
+                        <p>Джона Марстона принуждают выследить бывших членов банды. Финальная глава истории.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">

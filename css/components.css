@@ -1,0 +1,526 @@
+/* ===================================
+   RDR2 Encyclopedia - Components
+   Buttons, Cards, Filters, Progress Bars, Tags
+   =================================== */
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+    border: 2px solid var(--accent-primary);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--accent-primary);
+}
+
+/* --- Filter Buttons --- */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn,
+.tab-btn {
+    padding: 12px 25px;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.tab-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.filter-btn.active,
+.tab-btn.active {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--bg-primary);
+}
+
+/* --- Character Cards --- */
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.character-card,
+.guide-card,
+.ammo-card,
+.custom-card,
+.relation-card,
+.quote-card,
+.gallery-stat-card,
+.weapons-tabs,
+.guide-article {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.character-card {
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.character-image {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-placeholder {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.character-info {
+    padding: 25px;
+}
+
+.character-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.character-role {
+    color: var(--accent-primary);
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.character-desc {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.character-link {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.character-link:hover {
+    color: var(--accent-secondary);
+}
+
+.character-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.char-tag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: rgba(139, 0, 0, 0.15);
+    color: var(--accent-secondary);
+    border: 1px solid rgba(196, 30, 58, 0.3);
+}
+
+/* --- Character Stats --- */
+.character-stats {
+    margin-top: 15px;
+}
+
+.stat-bar {
+    margin-bottom: 10px;
+}
+
+.stat-bar span {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.stat-bar .bar {
+    height: 8px;
+    background-color: var(--bg-tertiary);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.stat-bar .fill {
+    height: 100%;
+    background: var(--progress-gradient);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* --- Guide Cards --- */
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.guide-card {
+    padding: 30px;
+}
+
+.guide-card:hover,
+.weapon-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-5px);
+}
+
+.guide-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.guide-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.guide-card p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.guide-link {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.guide-link:hover {
+    color: var(--accent-secondary);
+}
+
+.guide-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.guide-difficulty {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.difficulty-easy {
+    background-color: rgba(67, 233, 123, 0.2);
+    color: #43e97b;
+}
+
+.difficulty-medium {
+    background-color: rgba(212, 175, 55, 0.2);
+    color: #d4af37;
+}
+
+.difficulty-hard {
+    background-color: rgba(245, 87, 108, 0.2);
+    color: #f5576c;
+}
+
+/* --- Fact Cards (Index) --- */
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.fact-item,
+.fact-card {
+    display: flex;
+    gap: 20px;
+    background-color: var(--bg-card);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.fact-item:hover,
+.fact-card:hover {
+    border-color: var(--accent-primary);
+}
+
+.fact-number {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--accent-primary);
+    line-height: 1;
+}
+
+.fact-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.fact-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Fact Grid & Tags (Facts Page) --- */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+}
+
+.fact-card.featured {
+    border-color: var(--accent-gold);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, var(--bg-card) 100%);
+}
+
+.fact-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.tag-development { background-color: rgba(212, 175, 55, 0.2); color: #d4af37; }
+.tag-world { background-color: rgba(67, 233, 123, 0.2); color: #43e97b; }
+.tag-audio { background-color: rgba(102, 126, 234, 0.2); color: #667eea; }
+.tag-tech { background-color: rgba(240, 147, 251, 0.2); color: #f093fb; }
+.tag-secrets { background-color: rgba(250, 112, 154, 0.2); color: #fa709a; }
+.tag-weapons { background-color: rgba(245, 87, 108, 0.2); color: #f5576c; }
+.tag-animals { background-color: rgba(79, 172, 254, 0.2); color: #4facfe; }
+.tag-honor { background-color: rgba(48, 207, 208, 0.2); color: #30cfd0; }
+.tag-sales { background-color: rgba(161, 140, 209, 0.2); color: #a18cd1; }
+.tag-details { background-color: rgba(132, 250, 176, 0.2); color: #84fab0; }
+
+.fact-source {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* --- Gallery Items (Index) --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 15px;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Gallery Full Page --- */
+.gallery-grid-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid-full .gallery-item.large {
+    grid-column: span 2;
+    grid-row: auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gallery-caption {
+    padding: 15px;
+    background-color: var(--bg-card);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* --- Weapons Tabs (Index) --- */
+.weapons-tabs {
+    padding: 30px;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* --- Weapon Cards (Index + Page) --- */
+.weapons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.weapons-grid-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.weapon-card {
+    background-color: var(--bg-tertiary);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.weapon-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.weapon-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.weapon-card p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.weapon-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* --- Weapon Stats Detailed --- */
+.weapon-stats-detailed {
+    margin-top: 20px;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.stat-row span {
+    min-width: 100px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background-color: var(--bg-tertiary);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--progress-gradient);
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
