@@ -3,6 +3,33 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ===================================
+    // Theme Toggle (Dark/Light)
+    // ===================================
+    const themeToggle = document.querySelector('.theme-toggle');
+    const html = document.documentElement;
+    
+    function setTheme(theme) {
+        if (theme === 'light') {
+            html.setAttribute('data-theme', 'light');
+        } else {
+            html.removeAttribute('data-theme');
+        }
+        localStorage.setItem('rdr2-theme', theme);
+    }
+    
+    const savedTheme = localStorage.getItem('rdr2-theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    }
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            const current = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            setTheme(current);
+        });
+    }
+    
+    // ===================================
     // Mobile Menu Toggle
     // ===================================
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -102,11 +129,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function updateHeaderOnScroll() {
         if (window.scrollY > 50) {
-            header.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
-            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+            header.classList.add('header-scrolled');
         } else {
-            header.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
-            header.style.boxShadow = 'none';
+            header.classList.remove('header-scrolled');
         }
     }
     
